@@ -19,16 +19,17 @@ while True:
     
     except ValueError:
         print ("Invalid, please enster a valid number")
-
+        continue # Skip increase when output is invalid
 total += num_entered
 count += 1
   
-if count > -1:
-        print("Programme stopped")
+if count > 0:
+    print("Programme stopped")
+    average = total / count # calculate average
+    print(f"The average of entered numbers is: {average}") # print the average
 
-        average = total / count # calculate average
-
-        print(f"The average of entered numbers is: {average}") # print the average
+else:
+    print("No valid numbers are entered. Cannot calculate an average.")
 
 
         
