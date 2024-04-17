@@ -22,6 +22,7 @@ while True:
     
     except ValueError:
         print ("Invalid, please enter a valid number")
+        continue # Skip increase when output is invalid
   
 if number_count > 0:
         print("Programme stopped")
