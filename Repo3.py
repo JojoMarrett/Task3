@@ -16,9 +16,10 @@ while True:
     if user_input == "-1":
          break
     try:
+        number = float(user_input)
         total += number
         number_count += 1
-        number = float(user_input)
+        
     
     except ValueError:
         print ("Invalid, please enter a valid number")
