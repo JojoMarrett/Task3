@@ -16,13 +16,14 @@ while True:
     if user_input == "-1":
          break
     try:
+        total += number
+        number_count += 1
         number = float(user_input)
     
     except ValueError:
-        print ("Invalid, please enster a valid number")
+        print ("Invalid, please enter a valid number")
 
-total += number
-number_count += 1
+
   
 if number_count > 0:
         print("Programme stopped")
