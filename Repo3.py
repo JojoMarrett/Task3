@@ -24,7 +24,7 @@ while True:
 total += number
 number_count += 1
   
-if number_count > -1:
+if number_count > 0:
         print("Programme stopped")
 
         average = total / number_count # calculate average
