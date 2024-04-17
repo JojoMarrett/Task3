@@ -8,26 +8,26 @@ update num_loopy and count
 calculate and print average
 '''
 total = 0
-count = 0
+number_count = 0
 
 
 while True:
-    num_loopy = input("Enter a number or enter -1 to stop: ")
-    if num_loopy == "-1":
+    user_input = input("Enter a number or enter -1 to stop: ")
+    if user_input == "-1":
          break
     try:
-        num_entered = float(num_loopy)
+        number = float(user_input)
     
     except ValueError:
         print ("Invalid, please enster a valid number")
 
-total += num_entered
-count += 1
+total += number
+number_count += 1
   
-if count > -1:
+if number_count > -1:
         print("Programme stopped")
 
-        average = total / count # calculate average
+        average = total / number_count # calculate average
 
         print(f"The average of entered numbers is: {average}") # print the average
 
