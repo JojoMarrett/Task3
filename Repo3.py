@@ -27,11 +27,12 @@ while True:
   
 if number_count > 0:
         print("Programme stopped")
-
         average = total / number_count # calculate average
-
+        print (f"The average of entered numbers is: {average}")
 else:
-        print(f"The average of entered numbers is: {average}") # print the average
+       print("no valid numbers were entered.")
+
+
 
 
         
