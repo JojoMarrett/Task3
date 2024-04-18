@@ -30,6 +30,7 @@ if number_count > 0:
 
         average = total / number_count # calculate average
 
+else:
         print(f"The average of entered numbers is: {average}") # print the average
 
 
