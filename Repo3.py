@@ -6,30 +6,31 @@ if user enters -1 then the programme will stop
 update num_loopy and count
 calculate and print average
 '''
-total = 0
-count = 0
+total_sum = 0 # changed variable from total to total_sum
+number_of_entries = 0 # Changed variable from count to number_of_entries
 
 
 while True:
-    num_loopy = input("Enter a number or enter -1 to stop: ")
-    if num_loopy == "-1":
+    user_input = input("Enter a number or enter -1 to stop: ") # changed num_loopy to user_input
+    if user_input == "-1":
          break
     try:
-        num_entered = float(num_loopy)
+        num_entered = float(user_input)
     
     except ValueError:
         print ("Invalid, please enster a valid number")
-        continue # Skip increase when output is invalid
-total += num_entered
-count += 1
+
+    total_sum += num_entered
+    number_of_entries += 1
   
-if count > 0:
-    print("Programme stopped")
-    average = total / count # calculate average
-    print(f"The average of entered numbers is: {average}") # print the average
+if number_of_entries > 0: # changed from count > -1 to number_of entries > 0
+        print("Programme stopped")
+
+        average = total_sum / number_of_entries # calculate average
+
+        print(f"The average of entered numbers is: {average}") # print the average
 
 else:
-    print("No valid numbers are entered. Cannot calculate an average.")
-
+     print("No valid numbers were entered.")
 
         
